@@ -24,7 +24,7 @@ function App() {
         </div>
       </nav>
       {/* NewsFeed */}
-      <article className="flex">
+      <article className="flex gap-4">
         {/* Feed */}
         <section className="w-3/4">
         <header className="flex justify-between mt-20 border-b-2 border-[#E6E6E6] items-center pb-3">
@@ -90,6 +90,36 @@ function App() {
         </article>
         </section>
         {/* Recommendations */}
+        <section className="flex flex-col pt-20 flex-grow items-center border-l-2 border-[#E6E6E6]">
+              <div className="max-w-[300px] flex flex-col">
+              <button className="rounded-full px-5 py-2 bg-cta-blue text-white w-full">Subscribe to Moringa Daily Premium</button>
+              <h3 className="mt-8 font-semibold text-base"><div className="h-3 w-3 rounded-full bg-orange inline-block mr-2"></div>Recently read posts</h3>
+              <div className="blogs flex flex-col gap-6 mt-8">
+                <article className="blog flex flex-col gap-1">
+                  <div className="blog-header flex gap-3">
+                    <img src={avatarImageOne}/>
+                    <p>JumaLawrence</p>
+                  </div>
+                  <h3 className="blog-title font-semibold">Best ways to use "Extract" utility type in Typescript</h3>
+                </article>
+                <article className="blog flex flex-col gap-1">
+                  <div className="blog-header flex gap-3">
+                    <img src={avatarImageOne}/>
+                    <p>JumaLawrence</p>
+                  </div>
+                  <h3 className="blog-title font-semibold">Array Methods in Javascript</h3>
+                </article>
+                <article className="blog flex flex-col gap-1">
+                  <div className="blog-header flex gap-3">
+                    <img src={avatarImageOne}/>
+                    <p>JumaLawrence</p>
+                  </div>
+                  <h3 className="blog-title font-semibold">Costly CSS Properties and How to Optimize Them</h3>
+                </article>
+                <p className="text-orange mt-2">See the full list</p>
+              </div>
+              </div>
+        </section>
       </article>
     </main>
   )
