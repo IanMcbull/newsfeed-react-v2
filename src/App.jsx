@@ -7,14 +7,14 @@ import avatarImageTwo from "./assets/avatar-feed-two.png"
 function App() {
 
   return (
-    <main className="min-h-screen p-4 md:p-0 grid grid-cols-1 gap-6 md:grid-cols-[120px,auto]">
+    <main className="min-h-screen p-4 lg:p-0 grid grid-cols-1 gap-6 lg:grid-cols-[120px,auto]">
       {/* Navbar */}
       <nav className="flex flex-col">
-        <div className="md:hidden flex justify-between items-center">
+        <div className="lg:hidden flex justify-between items-center">
           <img src={logo} alt="logo main" className="w-32" />
           <i class="fa-solid fa-bars text-xl"></i>
         </div>
-        <div className="hidden text-xl border-r-2 border-[#E6E6E6] md:flex md:flex-col items-center justify-center text-orange gap-10 min-h-full">
+        <div className="hidden text-xl border-r-2 border-[#E6E6E6] lg:flex md:flex-col items-center justify-center text-orange gap-10 min-h-full">
           <a href="#"><i class="fa-solid fa-house"></i></a>
           <a><i class="fa-regular fa-bell"></i></a>
           <a href="#"><i class="fa-sharp fa-regular fa-bookmark"></i></a>
@@ -90,9 +90,9 @@ function App() {
           </article>
         </section>
         {/* Recommendations */}
-        <section className="flex flex-col pt-20 flex-grow items-center border-l-2 border-[#E6E6E6]">
+        <section className="flex flex-col pt-20 flex-grow px-4 items-center border-l-2 border-[#E6E6E6]">
           <div className="max-w-[300px] flex flex-col">
-            <button className="rounded-full px-5 py-2 bg-cta-blue text-white w-full">Subscribe to Moringa Daily Premium</button>
+            <button className="rounded-full px-4 lg:px-5 py-2  bg-cta-blue text-white w-full">Subscribe to Moringa Daily Premium</button>
             <h3 className="mt-8 font-semibold text-base"><div className="h-3 w-3 rounded-full bg-orange inline-block mr-2"></div>Recently read posts</h3>
             {/* posts */}
             <div className="blogs flex flex-col gap-8 mt-8">
