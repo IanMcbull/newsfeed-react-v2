@@ -24,17 +24,17 @@ function App() {
         </div>
       </nav>
       {/* NewsFeed */}
-      <article className="flex gap-4">
+      <article className="flex flex-col lg:flex-row gap-4">
         {/* Feed */}
-        <section className="md:w-3/4">
-          <header className="hidden md:flex justify-between mt-20 border-b-2 border-[#E6E6E6] items-center pb-3">
+        <section className="lg:w-3/4">
+          <header className="hidden md:flex justify-between mt-20 lg:border-b-2 lg:border-[#E6E6E6] items-center pb-3">
             <div className="flex text-base gap-6 items-center">
               <a href="#" className="text-gray-text font-light">Following</a>
               <a href="#" className="text-black font-medium">Recommended</a>
             </div>
             <img src={logo} alt="logo" />
           </header>
-          <article className="flex flex-col max-w-6xl mx-auto mt-10 h-3/4 justify-around">
+          <article className="flex flex-col max-w-6xl mx-auto mt-10 lg:h-3/4 justify-around pr-2 gap-8 lg:gap-0">
             <section className="flex card gap-8">
               <div className="flex flex-col gap-2">
                 <div className="card-header flex gap-2">
@@ -59,7 +59,7 @@ function App() {
                   </div>
                 </div>
               </div>
-              <img className="card-img" src={articleImageOne} />
+              <img className="card-img object-cover rounded-md" src={articleImageOne} />
             </section>
             <section className="flex card gap-8">
               <div className="flex flex-col gap-2">
@@ -85,7 +85,7 @@ function App() {
                   </div>
                 </div>
               </div>
-              <img className="card-img" src={articleImageTwo} />
+              <img className="card-img object-cover rounded-md" src={articleImageTwo} />
             </section>
           </article>
         </section>
